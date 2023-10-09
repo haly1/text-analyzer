@@ -1,0 +1,8 @@
+<app-header [isOfflineModeActive]="isOfflineModeActive" [title]="title" (modeChange)="toggleMode($event)"></app-header>
+
+<div class="container">
+  <app-input-form (formSubmit)="analyzeText($event)"></app-input-form>
+  <app-text-analysis-result [resultsArray]="analysisResult"></app-text-analysis-result>
+</div>
+
+

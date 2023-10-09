@@ -1,0 +1,7 @@
+<mat-toolbar class="toolbar">
+  <span>{{title}}</span>
+  <mat-slide-toggle class="toggle" [checked]=isOfflineModeActive (change)="emitChange($event)">
+    Offline Mode
+  </mat-slide-toggle>
+</mat-toolbar>
+

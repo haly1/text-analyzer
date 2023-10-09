@@ -1,0 +1,3 @@
+<mat-card class="result-card" *ngFor="let result of resultsArray.slice().reverse()">
+  <mat-card-content *ngIf="result" appJsonFormatter [json]="result"/>
+</mat-card>

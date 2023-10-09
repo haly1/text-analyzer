@@ -1,0 +1,13 @@
+<form class="input-form" [formGroup]="form" (ngSubmit)="submitForm()">
+  <mat-form-field>
+    <mat-label>Textarea</mat-label>
+    <textarea formControlName="textToAnalyze" matInput rows="10"></textarea>
+  </mat-form-field>
+  <mat-radio-group formControlName="mode">
+    <mat-radio-button value="both">All letters</mat-radio-button>
+    <mat-radio-button value="vowels">Only Vowels</mat-radio-button>
+    <mat-radio-button value="consonants">Only Consonants</mat-radio-button>
+  </mat-radio-group>
+  <button mat-raised-button color="primary" type="submit" [disabled]="!form.valid">Analyze</button>
+</form>
+
